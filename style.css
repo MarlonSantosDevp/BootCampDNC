@@ -1,10 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+    --azul-dnc: #0C70F2;
+    --preto-dnc: #303030;
+    --cinza-hover: #C9C9C9
+}
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Inter';
 }
+a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+body {
+    background: linear-gradient(180deg, rgba(12, 112, 242, 0.5) 19.91%, rgba(12, 112, 242, 0) 24.84%),
+    linear-gradient(0deg, #303030, #303030);
+    background-repeat: no-repeat;
+}
+
 #principal {
     width: 100%;
     height: 100px;
@@ -42,4 +59,194 @@
 }
 #principal button:hover {
     cursor: pointer;
+}
+
+section {
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1 {
+    font-size: 80px;
+    font-weight: 800;
+    text-align: center;
+}
+h2 {
+    font-weight: 700;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+header .invert {
+    background-color: black;
+    font-weight: bold;
+    padding: 5px;
+}
+form {
+    width: 600px;
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+label {
+    font-weight: 600;
+    font-size: 30px;
+    margin: 10px 0px 10px 0px;
+}
+.checkbox {
+    width: 20px;
+    height: 22px;
+    border: 2px;
+}
+input {
+    height: 56px;
+    border: none;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.9);
+    padding-left: 15px;
+}
+input[type="checkbox"] {
+    transform: scale(1.5);
+}
+
+.checkbox-itens {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.checkbox-itens label {
+    font-size: 25px;
+}
+
+form input::placeholder {
+    color: rgba(57, 57, 57, 0.5);
+}
+input[type="submit"] {
+    background-color: #0C70F2;
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 32px;
+    margin-top: 100px;
+    margin-bottom: 200px;
+    box-shadow: 0px 6px 4px 0px rgba(12, 112, 242, 0.25);
+}
+input[type="submit"]:hover {
+    cursor: pointer;
+    transform: translateY(-10px);
+}
+
+footer {
+    width: 100%;
+    background-color: #0C70F2;
+}
+
+footer .linha1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer ul {
+    list-style: none;
+    height: 330px; 
+}
+footer nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer h5 {
+    text-align: center;
+    color: #FFFFFF;
+    font-weight: 800;
+    font-size: 25px;
+    background-color: #303030;
+    border-radius: 10px;
+    margin: 50px 0px 20px 0px;
+    padding: 10px;
+}
+footer ul li {
+    text-align: center;
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 25px;
+    margin: 20px 0px 20px 0px;
+}
+footer ul li a:hover {
+    color: #BABABA;
+}
+footer .endereco {
+    font-weight: 600;
+    font-size: 20px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+
+footer .linha2 {
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+    
+}
+footer .linha2 a {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+footer .linha2 a:first-child {
+    padding-right: 20px;
+    padding-left: 20px;
+    border-right: 1px solid white;
+}
+footer .linha2:hover {
+    color: #BABABA;
+}
+
+@media only screen and (max-width: 600px){
+    #principal {
+        flex-direction: column;
+        height: auto;
+    }
+    #menu {
+        flex-direction: column;
+        width: 100%;
+        margin: 0px;
+        align-items: center;
+    }
+    #menu a {
+        display: flex;
+        align-items: center;
+        height: 50px;
+    }
+    #principal button {
+        width: 100%;
+        margin: 0px;
+    }
+
+    section h1 {
+        font-size: 38px;
+    }
+    section h2 {
+        font-size: 28px;
+        padding: 0px 20px 0px 20px;
+    }
+
+    form {
+        width: 95%;
+        font-size: 20px;
+    }
+
+    .checkbox label {
+        font-size: 10px;
+    }
+
+
 }
